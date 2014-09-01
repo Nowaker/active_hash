@@ -150,6 +150,7 @@ ActiveHash gives you ActiveRecord-esque methods like:
     Country.find :all       # => same as .all
     Country.find :all, args # => the second argument is totally ignored, but allows it to play nicely with AR
     Country.find_by_id 1    # => find the first object that matches the id
+    Country.where(k: 'val') # => find all objects that match the criteria
 
 It also gives you a few dynamic finder methods.  For example, if you defined :name as a field, you'd get:
 
